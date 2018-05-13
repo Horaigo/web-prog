@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #FFF;
+  height: 100%;
+  margin-bottom: 10px;
+}
+html {
+ position:relative;
+ min-height:100%;
+}
+.element::-webkit-scrollbar { width: 0; }
+.footer {
+  height: 30px;
+  text-align: center;
+  background: #99958C;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: serif;
+  padding-top: 0.1%;
+}
+.content {
+  padding-bottom: 25px;
+}
+.header {
+  background-color: #F2F2F2;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.main, .characters, .feedback, .galery {
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  word-spacing: normal;
+  width: -webkit-fill-available;
+}
+.characters {
+  border-right: 1px solid black;
+  background-color: #99958C;
+}
+.main {
+  border-right: 1px solid black;
+}
+.galery {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.main:hover, .characters:hover, .feedback:hover, .galery:hover {
+  background-color: #CBCBCB;
+}
+.col {
+  float: left;
+  width: 25%;
+}
+.col > div:hover {
+  box-shadow: 0 0 3px #666, 0 0 5px #ccc;
+  cursor: pointer;
+}
+.col > div {
+  margin: 10px;
+}
+.col img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 60%;
+  display: block;
+}
+.a2 {
+  object-position: 50% 50% !important;
+}
+.commander {
+  object-position: 50% 30% !important;
+}
+.pods {
+  object-fit: contain !important;
+}
+.eve {
+  object-position: 50% 0% !important;
+}
+.col-text > div {
+  height: 100px;
+  overflow: hidden;
+}
+.col-text {
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #333;
+  border-top: 0;
+  padding: 10px;
+  text-align: justify;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #6a95b7;
+}
+@media (max-width: 1200px) and (min-width: 800px) {
+  .col {
+    width: 33%;
+  }
+}
+@media (max-width: 799px) {
+  .col {
+    width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .main, .characters, .feedback, .galery {
+    font-size: 10px;
+  }
+}

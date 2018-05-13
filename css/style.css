@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #FFF;
+  height: 100%;
+}
+html {
+ position:relative;
+ min-height:100%;
+}
+.footer {
+  height: 30px;
+  text-align: center;
+  background: #99958C;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: serif;
+  padding-top: 0.1%;
+}
+.content {
+  padding-bottom: 25px;
+}
+.logo {
+  width: 100%;
+}
+.textcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about {
+  padding-left: 1%;
+}
+.entry {
+  font-size: 20px;
+  padding-left: 1.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.score {
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+  margin-bottom: 1%;
+}
+.imgtext {
+  margin-left: 3%
+}
+.header {
+  background-color: #F2F2F2;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.main, .characters, .feedback, .galery {
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  word-spacing: normal;
+  width: -webkit-fill-available;
+}
+.main {
+  border-right: 1px solid black;
+  background-color: #99958C;
+}
+.galery {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.main:hover, .characters:hover, .feedback:hover, .galery:hover {
+  background-color: #CBCBCB;
+}
+.entcom {
+  position: absolute;
+  bottom: 35px;
+  padding: 1%;
+  padding-bottom: 10px;
+  border-top: 4px double #CCC;
+  width: -webkit-fill-available;
+  background-color: #F2F2F2;
+}
+.txtfld {
+  width: -webkit-fill-available;
+}
+
+.button {
+  width: -webkit-fill-available;
+  padding: 1%;
+  background-color: #F2F2F2;
+  border: 1px solid #d1d1d1;
+  font-size: 15px;
+  font-family: inherit;
+}
+.button:hover {
+  background-color: #CBCBCB;
+}
+.comments {
+  padding-bottom: 15%;
+}
+.comment {
+  margin: 1%;
+  margin-left: 3%;
+  word-break: break-all;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comment::before {
+  content: url("C:/Users/Egor/Desktop/Основы Web. 1 лаба/img/icon.png");
+  padding-right: 1%;
+}
+@media (max-width: 320px) {
+  .main, .characters, .feedback, .galery {
+    font-size: 10px;
+  }
+  .txtfld {
+    height: 40px;
+  }
+}
+@media (max-width: 700px) and (min-width:320px) {
+  .txtfld {
+    height: 80px;
+  }
+}
