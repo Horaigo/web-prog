@@ -116,7 +116,7 @@ html {
   align-items: center;
 }
 .comment::before {
-  content: url("C:/Users/Egor/Desktop/Основы Web. 1 лаба/img/icon.png");
+  content: url("../../img/icon.png");
   padding-right: 1%;
 }
 @media (max-width: 320px) {
